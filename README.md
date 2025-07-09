@@ -38,7 +38,7 @@ A comprehensive PowerShell script for checking public DNS configuration of domai
 Check DNS configuration and display results in console:
 
 ```powershell
-.\\Get-DomainDNSConfig-Simple.ps1 -Domain "contoso.com"
+.\\Get-DomainDNSConfig.ps1 -Domain "contoso.com"
 ```
 
 ### Generate HTML Report
@@ -46,7 +46,7 @@ Check DNS configuration and display results in console:
 Check DNS configuration and generate an HTML report:
 
 ```powershell
-.\\Get-DomainDNSConfig-Simple.ps1 -Domain "contoso.com" -GenerateHTMLReport
+.\\Get-DomainDNSConfig.ps1 -Domain "contoso.com" -GenerateHTMLReport
 ```
 
 ### Specify Output Path
@@ -54,7 +54,7 @@ Check DNS configuration and generate an HTML report:
 Generate HTML report in a specific directory:
 
 ```powershell
-.\\Get-DomainDNSConfig-Simple.ps1 -Domain "contoso.com" -GenerateHTMLReport -OutputPath "C:\\Reports\\"
+.\\Get-DomainDNSConfig.ps1 -Domain "contoso.com" -GenerateHTMLReport -OutputPath "C:\\Reports\\"
 ```
 
 ## 📊 What It Checks
@@ -176,17 +176,6 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 - Some corporate networks may block external DNS queries
 - Try running from a different network if issues persist
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-### Development Setup
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -213,19 +202,6 @@ If you encounter any issues or have questions:
   - HTML report generation
   - Console output formatting
 
-## 🎯 Roadmap
-
-- [ ] Add support for custom DNS servers
-- [ ] Batch processing from CSV files
-- [ ] DNS propagation checking across multiple servers
-- [ ] Email-specific record validation (SPF, DKIM, DMARC)
-- [ ] JSON export option
-- [ ] PowerShell Gallery publication
-
----
-
-**Made with ❤️ for the PowerShell community**
-```
 
 ## 🚀 Quick Start
 
@@ -236,18 +212,5 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/yourusername/powershel
 ```
 ```
 
-This README includes:
 
-- **Clear project description** with feature highlights
-- **Installation instructions** with prerequisites
-- **Comprehensive usage examples** for different scenarios
-- **Parameter documentation** in table format
-- **Sample output** showing what users can expect
-- **Troubleshooting section** for common issues
-- **Contributing guidelines** for open source collaboration
-- **Professional formatting** with emojis and proper markdown
-- **Quick start section** for immediate use
-- **Roadmap** showing future development plans
-
-The README is structured to be informative for both beginners and advanced users, making it perfect for a GitHub repository!
 
